@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 30px;
+
+}
+
+h1{
+    text-decoration: underline;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+#weatherOutput {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+.dark-mode {
+    background: #000000;
+    color: white;
+}
+
+.dark-mode input, .dark-mode button {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.dark-mode input::placeholder{
+    color: rgb(225, 225, 225);
+}
+
+input{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+input:focus{
+    outline: none;
+
+}
+
+button{
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 13px;
+    font-family: "Montserrat";
+}
+
+#darkModeToggle{
+    color: rgb(0, 0, 0);
+    background-color: skyblue;
+    border-radius: 50px;
+
+}
+
+#darkModeToggle:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(168, 230, 255);
+
+}
+
+
+#getWeather{
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 144, 255);
+}
+#getWeather:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(182, 178, 246);
+}
+
+#Location{
+    color: rgb(0, 0, 0);
+    background-color: rgb(144, 255, 174);
+}
+#Location:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 255, 197);
+}
+
+
+@media(max-width: 1024px){
+    body{
+        font-size: 21px;
+    }
+}

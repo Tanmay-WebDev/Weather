@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5dee88736d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>Weather App <img src="clouds.png" width="50px" alt=""></h1>
+
+    
+    <button onclick="getLocationWeather()" id="Location"> <i class="fa-solid fa-location-dot"></i> Check My Location</button>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()" id="getWeather"> <img src="celsius.png" width="20px" alt=""> Get Weather</button>
+    
+    <button id="darkModeToggle"><img src="sleep-mode.png" width="15px" alt=""> Dark Mode</button>
+    <div id="weatherOutput"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
